@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文章列表</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
     <!-- 头部 -->
@@ -26,35 +25,25 @@
     <!-- 文章列表 -->
     <main>
         <h2>所有文章</h2>
-        <!-- 创建文章列表的表格。 -->
-        <table border="1">
-            <!-- 表格头部，包含列名（标题、发布日期、阅读量）。 -->
-            <thead>
-                <tr>
-                    <th>文章标题</th>
-                    <th>发布日期</th>
-                    <th>阅读量</th>
-                </tr>
-            </thead>
-            <!-- 表格主体，列出不同的文章。 -->
-            <tbody>
-                <tr>
-                    <td><a href="article-detail.html">HTML5 学习笔记</a></td>
-                    <td>2025-03-07</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td><a href="article-detail.html">如何开始前端开发</a></td>
-                    <td>2025-03-06</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td><a href="article-detail.html">CSS3 基础入门</a></td>
-                    <td>2025-03-05</td>
-                    <td>73</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="article-container">
+            <div class="article-card">
+                <h3><a href="article-detail.html">HTML5 学习笔记</a></h3>
+                <p>发布日期：2025-03-07 | 阅读量：100</p>
+                <p>介绍 HTML5 的核心知识点...</p>
+            </div>
+
+            <div class="article-card">
+                <h3><a href="article-detail2.html">如何开始前端开发</a></h3>
+                <p>发布日期：2025-03-06 | 阅读量：85</p>
+                <p>前端开发入门指南...</p>
+            </div>
+
+            <div class="article-card">
+                <h3><a href="article-detail3.html">CSS3 基础入门</a></h3>
+                <p>发布日期：2025-03-05 | 阅读量：73</p>
+                <p>CSS3 的基本语法和使用...</p>
+            </div>
+        </div>
     </main>
 
     <!-- 底部 -->
@@ -63,5 +52,4 @@
     </footer>
 
 </body>
-
 </html>

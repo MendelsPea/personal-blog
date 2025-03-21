@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>关于我</title>
 </head>
+
 <body>
 
     <!-- 头部 -->
@@ -21,55 +23,63 @@
         </nav>
     </header>
 
-    <!-- 个人简介 -->
-    <section>
-        <h2>个人简介</h2>
-        <p>你好，我是萌德尔的豌豆，一名正在学习 Web 前端开发的大学生。我热爱编程，对 HTML、CSS、C++ 充满兴趣，目标是成为一名优秀的前端开发工程师。</p>
-        <img src="assets\IMG_2595.JPG" alt="我的照片" width="200">
-    </section>
+    <main class="about-container">
 
-    <!-- 学习经历 -->
-    <section>
-        <h2>学习经历</h2>
-        <ol>
-            <li>2024 年 - 开始学习 C++。</li>
-            <li>2025 年 - 开始学习 Web 前端基础（HTML5、CSS3），开始写自己的项目</li>
-            <li>2026 年 - 计划学习Python，C语言</li>
-        </ol>
-    </section>
+        <!-- 个人简介 -->
+        <section>
+            <h2>个人简介</h2>
+            <img src="assets/IMG_2595.JPG" alt="我的照片" class="profile-pic">
+            <p>你好，我是萌德尔的豌豆，一名正在学习 Web 前端开发的大学生。我热爱编程，对 HTML、CSS、C++ 充满兴趣，目标是成为一名优秀的前端开发工程师。</p>
+        </section>
 
-    <!-- 技能列表 -->
-    <section>
-        <h2>我的技能</h2>
-        <ul>
-            <li>C++（熟练）</li>
-            <li>HTML5（熟练）</li>
-            <li>CSS3（正在学习）</li>
-        </ul>
-    </section>
+        <!-- 学习经历 -->
+        <section>
+            <h2>学习经历</h2>
+            <ol>
+                <li>2024 年 - 开始学习 C++。</li>
+                <li>2025 年 - 开始学习 Web 前端基础（HTML5、CSS3），开始写自己的项目</li>
+                <li>2026 年 - 计划学习 Python，C 语言</li>
+            </ol>
+        </section>
 
-    <!-- 兴趣爱好 -->
-    <section>
-        <h2>兴趣爱好</h2>
-        <table border="1">
-            <tr>
-                <th>爱好</th>
-                <th>描述</th>
-            </tr>
-            <tr>
-                <td>编程</td>
-                <td>喜欢写代码，解决问题</td>
-            </tr>
-            <tr>
-                <td>看小说</td>
-                <td>喜欢玄幻小说，比如《十日终焉》</td>
-            </tr>
-            <tr>
-                <td>听音乐</td>
-                <td>喜欢流行音乐和电子音乐</td>
-            </tr>
-        </table>
-    </section>
+        <!-- 技能列表 -->
+        <section>
+            <h2>我的技能</h2>
+            <div class="skill-list">
+                <span class="skill">C++（熟练）</span>
+                <span class="skill">HTML5（熟练）</span>
+                <span class="skill">CSS3（正在学习）</span>
+            </div>
+        </section>
+
+        <!-- 兴趣爱好 -->
+        <section>
+            <h2>兴趣爱好</h2>
+            <table class="hobby-table">
+                <thead>
+                    <tr>
+                        <th>爱好</th>
+                        <th>描述</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>编程</td>
+                        <td>喜欢写代码，解决问题</td>
+                    </tr>
+                    <tr>
+                        <td>看小说</td>
+                        <td>喜欢玄幻小说，比如《十日终焉》</td>
+                    </tr>
+                    <tr>
+                        <td>听音乐</td>
+                        <td>喜欢流行音乐和电子音乐</td>
+                    </tr>   
+                </tbody>
+            </table>
+        </section>
+
+    </main>
 
     <!-- 底部 -->
     <footer>
